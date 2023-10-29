@@ -210,7 +210,7 @@
             {% for caballero in caballeros %}
             <div class="u-align-center u-container-style u-products-item u-radius-10 u-repeater-item u-shape-round u-white u-repeater-item-1" data-product-id="6">
               <div class="u-container-layout u-similar-container u-container-layout-1"><!--product_image-->
-                <a class="u-product-title-link" href="/productos/{{caballero.id}}"><img alt="" class="u-expanded-width u-image u-image-contain u-image-default u-product-control u-image-1" src="{{ caballero.urlImagen }}"></a><img src="images/414330ad.svg" class="u-product-second-image"><!--/product_image--><!--product_title-->
+                <a class="u-product-title-link" href="/productos/{{caballero.id}}"><img alt="" class="u-expanded-width u-image u-image-contain u-image-default u-product-control u-image-1" src="{{ caballero.urlImagen }}"></a><img src="{% static 'images/414330ad.svg' %}" class="u-product-second-image"><!--/product_image--><!--product_title-->
                 <h4 class="u-align-center u-product-control u-text u-text-2">
                   <a class="u-product-title-link" href="products/t-tulo-del-producto-1.html">{{ caballero.nombre }}</a>
                 </h4><!--/product_title--><!--product_price-->
@@ -236,7 +236,7 @@
             {% for dama in damas %}
             <div class="u-align-center u-container-style u-products-item u-radius-10 u-repeater-item u-shape-round u-white u-repeater-item-6" data-product-id="6">
               <div class="u-container-layout u-similar-container u-container-layout-6"><!--product_image-->
-                <a class="u-product-title-link" href="/productos/{{dama.id}}"><img alt="" class="u-expanded-width u-image u-image-contain u-image-default u-product-control u-image-6" src="{{ dama.urlImagen }}"></a><img src="images/414330ad.svg" class="u-product-second-image"><!--/product_image--><!--product_title-->
+                <a class="u-product-title-link" href="/productos/{{dama.id}}"><img alt="" class="u-expanded-width u-image u-image-contain u-image-default u-product-control u-image-6" src="{{ dama.urlImagen }}"></a><img src="{% static 'images/414330ad.svg' %}" class="u-product-second-image"><!--/product_image--><!--product_title-->
                 <h4 class="u-align-center u-product-control u-text u-text-8">
                   <a class="u-product-title-link" href="products/t-tulo-del-producto-1.html">{{dama.nombre}}</a>
                 </h4><!--/product_title--><!--product_price-->
@@ -266,7 +266,7 @@
             {% for promocion in promociones %}
             <div class="u-align-center u-container-style u-products-item u-radius-10 u-repeater-item u-shape-round u-white u-repeater-item-1" data-product-id="6">
               <div class="u-container-layout u-similar-container u-container-layout-1"><!--product_image-->
-                <a class="u-product-title-link" href="products/t-tulo-del-producto-1.html"><img alt="" class="custom-expanded u-expanded-width-lg u-expanded-width-xl u-image u-image-contain u-image-default u-product-control u-image-1" src="{{promocion.urlImagen}}"></a><img src="images/414330ad.svg" class="u-product-second-image"><!--/product_image--><!--product_title-->
+                <a class="u-product-title-link" href="products/t-tulo-del-producto-1.html"><img alt="" class="custom-expanded u-expanded-width-lg u-expanded-width-xl u-image u-image-contain u-image-default u-product-control u-image-1" src="{{promocion.urlImagen}}"></a><img src="{% static 'images/414330ad.svg' %}" class="u-product-second-image"><!--/product_image--><!--product_title-->
                 <h4 class="u-align-center u-product-control u-text u-text-1">
                   <a class="u-product-title-link" href="products/t-tulo-del-producto-1.html">{{promocion.nombre}}</a>
                 </h4><!--/product_title--><!--product_price-->
